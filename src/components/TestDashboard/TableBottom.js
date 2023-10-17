@@ -12,23 +12,12 @@ import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Img1 from "./Images/img1.jpg";
 import Img2 from "./Images/img2.jpg";
 import "./content.css";
-function createData(name, calories, fat, carbs, protein) {
-    return { name, calories, fat, carbs, protein };
-}
 
-const rows = [
-    createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-
-
-    createData('Gingerbread', 356, 16.0, 49, 3.9),
-];
-
-export default function BasicTable() {
+ function TableBottom() {
     return (
         <div>
             <div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
@@ -120,3 +109,4 @@ export default function BasicTable() {
         </div>
     );
 }
+export default TableBottom

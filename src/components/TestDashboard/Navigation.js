@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import Box from '@mui/material/Box';
@@ -7,16 +6,6 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import HomeIcon from '@mui/icons-material/Home';
-import PeopleIcon from '@mui/icons-material/People';
-import DnsRoundedIcon from '@mui/icons-material/DnsRounded';
-import PermMediaOutlinedIcon from '@mui/icons-material/PhotoSizeSelectActual';
-import PublicIcon from '@mui/icons-material/Public';
-import SettingsEthernetIcon from '@mui/icons-material/SettingsEthernet';
-import SettingsInputComponentIcon from '@mui/icons-material/SettingsInputComponent';
-import TimerIcon from '@mui/icons-material/Timer';
-import SettingsIcon from '@mui/icons-material/Settings';
-import PhonelinkSetupIcon from '@mui/icons-material/PhonelinkSetup';
 import ArrowForward from '@mui/icons-material/ArrowForwardIosOutlined';
 import HexagonOutlinedIcon from '@mui/icons-material/HexagonOutlined';
 import DashboardIcon from '@mui/icons-material/DashboardOutlined';
@@ -27,10 +16,8 @@ import BrightnessIcon from '@mui/icons-material/BrightnessHighOutlined';
 import HelpIcon from '@mui/icons-material/HelpOutlineOutlined';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Typography } from '@mui/material';
-import Avatar from '@mui/material/Avatar';
 import Profile from "./Images/girl.jpg"
 import "./content.css";
 
@@ -92,10 +79,11 @@ export default function Navigator(props) {
 
       </List>
       {/* Accordion at the bottom */}
-      <div style={{ position: 'absolute', bottom: 10, left: 0, right: 0, padding: '10px' }}>
+      <div style={{ position: 'absolute', bottom: 10, left: 0, right: 0, padding: '20px 10px ' }}>
         {/* Accordion at the bottom */}
-        <Accordion className='accordion' style={{ backgroundColor: '#2d2d69', height: '50px', alignItems: 'center' }} >
+        <Accordion className='accordion' disablePadding style={{ backgroundColor: '#2d2d69', alignItems: 'center', }} >
           <AccordionSummary
+            disablePadding
             expandIcon={<ExpandMoreIcon style={{ color: '#a7a8aa' }} />}
             aria-controls="panel1a-content"
             id="panel1a-header"
